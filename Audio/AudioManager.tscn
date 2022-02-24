@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Audio/SFX/pick_up.wav" type="AudioStream" id=1]
+[ext_resource path="res://Audio/SFX/jump.wav" type="AudioStream" id=2]
+[ext_resource path="res://Audio/SFX/coin_collect.wav" type="AudioStream" id=3]
+[ext_resource path="res://Audio/SFX/place_down.wav" type="AudioStream" id=4]
+[ext_resource path="res://Audio/SFX/invalid.wav" type="AudioStream" id=5]
+[ext_resource path="res://Audio/SFX/start.wav" type="AudioStream" id=6]
+[ext_resource path="res://Audio/SFX/hurt.wav" type="AudioStream" id=7]
+[ext_resource path="res://Audio/SFX/death.wav" type="AudioStream" id=8]
+
+[node name="AudioManager" type="Node"]
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="PlayerJump" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 2 )
+
+[node name="CoinCollect" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 3 )
+
+[node name="PickUp" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 1 )
+
+[node name="PlaceDown" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 4 )
+
+[node name="Invalid" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 5 )
+
+[node name="Start" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 6 )
+volume_db = -9.0
+
+[node name="Hurt" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 7 )
+
+[node name="Death" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 8 )

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/pico.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Tilemaps/Main.tres" type="TileSet" id=3]
+[ext_resource path="res://Textures/menu/title.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Menu/Start.gd" type="Script" id=5]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Start" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Label" type="RichTextLabel" parent="Start"]
+margin_left = 42.0
+margin_top = 55.0
+margin_right = 126.0
+margin_bottom = 61.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "PRESS [color=#BCBCBC][SPACE][/color] TO PLAY"
+text = "PRESS [SPACE] TO PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Sprite" parent="."]
+position = Vector2( 84, 47 )
+texture = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( 720899, 11, 2, 720911, 11, 0, 917505, 6, 1, 917506, 6, 3, 917510, 6, 2, 917511, 6, 3, 917518, 6, 1, 917519, 6, 3, 917521, 6, 3, 983040, 8, 0, 983041, 8, 0, 983042, 8, 0, 983043, 8, 0, 983044, 8, 0, 983045, 8, 0, 983046, 8, 0, 983047, 8, 0, 983048, 8, 0, 983049, 8, 0, 983050, 8, 0, 983051, 8, 0, 983052, 8, 0, 983053, 8, 0, 983054, 8, 0, 983055, 8, 0, 983056, 8, 0, 983057, 8, 0, 983058, 8, 0, 983059, 8, 0, 1048576, 8, 1, 1048577, 8, 1, 1048578, 8, 1, 1048579, 8, 1, 1048580, 8, 1, 1048581, 8, 1, 1048582, 8, 1, 1048583, 8, 1, 1048584, 8, 1, 1048585, 8, 1, 1048586, 8, 1, 1048587, 8, 1, 1048588, 8, 1, 1048589, 8, 1, 1048590, 8, 1, 1048591, 8, 1, 1048592, 8, 1, 1048593, 8, 1, 1048594, 8, 1, 1048595, 8, 1, 1114112, 8, 1, 1114113, 8, 1, 1114114, 8, 1, 1114115, 8, 1, 1114116, 8, 1, 1114117, 8, 1, 1114118, 8, 1, 1114119, 8, 1, 1114120, 8, 1, 1114121, 8, 1, 1114122, 8, 1, 1114123, 8, 1, 1114124, 8, 1, 1114125, 8, 1, 1114126, 8, 1, 1114127, 8, 1, 1114128, 8, 1, 1114129, 8, 1, 1114130, 8, 1, 1114131, 8, 1 )
